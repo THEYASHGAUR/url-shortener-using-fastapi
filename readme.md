@@ -27,31 +27,6 @@ python -m app.main
 ### API Documentation
 Visit http://localhost:8000/docs to access the interactive API documentation.
 
-### Shorten a URL
-1. Open http://localhost:8000/docs
-2. Go to POST /shorten endpoint
-3. Enter your URL in the following format:
-```json
-{
-    "original_url": "https://your-long-url.com"
-}
-```
-4. The response will contain your shortened URL
-
-### Access Shortened URL
-Simply open the shortened URL in your browser, and you'll be redirected to the original URL.
-
-## Project Structure
-```
-app/
-├── routes/
-│   └── url_routes.py    # API endpoints
-├── database.py          # Database configuration
-├── main.py             # FastAPI app initialization
-├── models.py           # Database models
-├── schema.py           # Pydantic models
-└── utlis.py           # Utility functions
-```
 
 ## Tech Stack
 - FastAPI
